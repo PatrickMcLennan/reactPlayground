@@ -1,6 +1,4 @@
-import Icon from './Icon';
-import Modal from './Icon';
-import Portal from './Icon';
-import Toggle from './Icon';
+import Portal from './Portal';
+import Toggle from './Toggle';
 
-export { Icon, Modal, Portal, Toggle };
+export { Portal, Toggle };
