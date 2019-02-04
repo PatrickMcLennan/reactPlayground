@@ -1,11 +1,11 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
-class Toggle extends Component {
+export default class Toggle extends Component {
   state = {
     on: false
   };
 
-  toggler = () => {
+  toggle = () => {
     this.setState({
       on: !this.state.on
     });
@@ -15,9 +15,7 @@ class Toggle extends Component {
     const { children } = this.props;
     return children({
       on: this.state.on,
-      toggle: this.toggler
+      toggle: this.toggle
     });
   }
 }
-
-export default Toggle;
