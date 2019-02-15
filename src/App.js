@@ -7,8 +7,7 @@ import { Toggle } from 'Utilities';
 import { Modal, Card } from 'Elements';
 import User from './User';
 import UserProvider from './UserProvider';
-
-const Header = props => <h1 style={props}>Please work</h1>;
+import Drag from './Drag';
 
 class App extends Component {
   render() {
@@ -31,6 +30,7 @@ class App extends Component {
             )}
           </Toggle>
           <section>
+            <Drag />
             <Toggle>
               {({ on, toggle }) => (
                 <Fragment>
